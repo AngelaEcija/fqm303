@@ -1,0 +1,10 @@
+{
+  "name": "FQM_303",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

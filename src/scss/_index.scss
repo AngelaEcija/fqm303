@@ -102,7 +102,7 @@ footer blockquote, footer ul {
 }
 
 .padding-panel {
-	padding: 10px 25px;
+	padding: 25px;
 	text-align: justify;
 }
 
@@ -161,3 +161,41 @@ h5 i {
 .collapsible-header i {
 	color: #ecbe14;
 }
+
+.project-panel {
+	width: 45%;
+	display: inline-block;
+	padding: 0;
+	margin: 20px;
+}
+
+.project-panel {
+	text-align: center;
+}
+
+.card-title {
+	margin: 25px;
+}
+
+.card-content {
+	margin: 25px;
+	text-align: justify;
+}
+
+.card-description {
+	width: 100%;
+}
+
+.card-icon {
+	width: 30px;
+	display: inline-block;
+}
+
+.card-icon i {
+	padding: 5px;
+}
+
+.card-item {
+	display: inline-block;
+}
+

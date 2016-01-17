@@ -30,6 +30,10 @@ footer {
   height: 250px;
 }
 
+nav {
+  background-color: #34b5aa !important;
+}
+
 .background-white {
   background-color: #ffffff;
 }

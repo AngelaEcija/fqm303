@@ -28,6 +28,26 @@ main {
 
 footer {
 	height: 250px;
+	background-color: #333333 !important;
+	position: absolute;
+	width: 100%;
+	margin-top: 0 !important;
+}
+
+.footer-description {
+	border-left:5px solid #34b5aa !important;
+}
+
+footer h5 {
+	color: #34b5aa;
+}
+
+footer h6, footer p {
+	color: #e8e8e7;
+}
+
+footer blockquote, footer ul {
+	color: #f6f5f5;
 }
 
 nav {
@@ -40,6 +60,7 @@ nav {
 
 .nav-wrapper {
 	background-color: #34b5aa;
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16)
 }
 
 .logo-wrapper img {
@@ -81,33 +102,14 @@ nav {
 	padding-bottom: 20 px;
 }
 
-.footer-description {
-	border-left:5px solid #34b5aa !important;
-}
-
-footer {
-	background-color: #333333 !important;
-	position: absolute;
-	width: 100%;
-	margin-top: 0 !important;
-}
-
-footer h5 {
-	color: #34b5aa;
-}
-
-footer h6, footer p {
-	color: #e8e8e7;
-}
-
-footer blockquote, footer ul {
-	color: #f6f5f5;
-}
-
 .tab-section {
 	background-color: #34b5aa;
 	padding-right: 0px !important;
 	padding-left: 0px !important;
+}
+
+.tab-section ul {
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16)
 }
 
 .tabs .tab a {
@@ -195,7 +197,7 @@ h5 i {
 }
 
 .collapsible-header i {
-	color: #ecbe14;
+	color: #34b5aa;
 }
 
 .project-panel {

@@ -152,6 +152,7 @@ nav {
 
 h5 i {
   margin-right: 15px;
+  color: #ecbe14;
 }
 
 .date-title {
@@ -204,6 +205,10 @@ h5 i {
 
 .collapsible-header i {
   color: #34b5aa;
+}
+
+.padding-collapsible {
+  padding: 30px;
 }
 
 .project-panel {

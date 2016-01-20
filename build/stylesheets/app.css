@@ -265,3 +265,104 @@ h5 i {
   display: inline-block;
   vertical-align: middle;
 }
+
+/** Publications and Instrumentation **/
+.publication-container {
+  width: 100%;
+  margin: 0 50px;
+}
+
+.publication-container.image {
+  margin: 0;
+}
+
+.publication-container .publication-icon-container, .publication-container .publication-text-container, instrumentation-container.image .instrumentation-image-container {
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+
+.publication-container .publication-icon-container {
+  width: 70px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.instrumentation-container.image .instrumentation-image-container {
+  width: 90px;
+  height: 90px;
+  margin-right: 20px;
+}
+
+.instrumentation-container.image .instrumentation-text-container,
+.instrumentation-container.image .instrumentation-image-container {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.instrumentation-container.image .instrumentation-image-container img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.instrumentation-container.image .instrumentation-image-container img.active {
+  border-radius: 0;
+}
+
+.publication-container .publication-icon-container i {
+  font-size: 32px;
+  color: #34b5aa;
+}
+
+.publication-container .publication-text-container {
+  width: calc(100% - 170px);
+  width: -webkit-calc(100% - 170px);
+  width: -moz-calc(100% - 170px);
+  width: -ms-calc(100% - 170px);
+  width: -o-calc(100% - 170px);
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.instrumentation-container.image .instrumentation-text-container {
+  width: calc(100% - 140px);
+  width: -webkit-calc(100% - 140px);
+  width: -moz-calc(100% - 140px);
+  width: -ms-calc(100% - 140px);
+  width: -o-calc(100% - 140px);
+  padding: 20px 0;
+  border-bottom: none;
+}
+
+.publication-container:last-child .publication-text-container {
+  border-bottom: none;
+}
+
+.publication-container .publication-text-container p,
+.publication-container .publication-text-container span,
+.instrumentation-container .instrumentation-text-container p,
+.instrumentation-container .instrumentation-text-container span {
+  padding: 0;
+  margin: 0;
+}
+
+/** Cards instrumentation **/
+.ellipsis-short {
+  text-align: justify;
+  height: 88px;
+}
+
+.card .card-action {
+  text-align: right;
+}
+
+.card .card-action a {
+  margin-right: 0;
+}
+
+.modal .max-width {
+  max-width: 100%;
+  width: 100%;
+}

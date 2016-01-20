@@ -14,4 +14,7 @@ $(function(){
 
 $(".button-collapse").sideNav();
 
+$(document).ready(function(){
+      $('.carousel').carousel();
+    });
 },{}]},{},["C:\\Users\\Angie\\Documents\\webs\\fqm303\\src\\js\\main"]);

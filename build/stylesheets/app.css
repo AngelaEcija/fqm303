@@ -105,6 +105,14 @@ nav {
   padding-bottom: 20 px;
 }
 
+.group-card {
+  width: 30%;
+  display: inline-block;
+  padding: 0;
+  margin: 40px;
+  vertical-align: top;
+}
+
 .tab-section {
   background-color: #34b5aa;
   padding-right: 0px !important;
@@ -218,9 +226,6 @@ h5 i {
   padding: 0;
   margin: 40px;
   vertical-align: top;
-}
-
-.project-panel {
   text-align: center;
 }
 

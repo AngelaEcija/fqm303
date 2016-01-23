@@ -36,7 +36,7 @@
   "dependencies": {
     "foundation-sites": "^5.5.2",
     "jquery": "^2.1.4",
-    "materialize-css": "^0.97.3"
+    "materialize-css": "^0.97.5"
   },
   "browser": {
     "jquery": "./node_modules/jquery/dist/jquery.js",

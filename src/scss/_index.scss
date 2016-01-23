@@ -54,10 +54,6 @@ nav {
 	background-color: #34b5aa !important;
 }
 
-.background-white {
-	background-color: #ffffff;
-}
-
 .nav-wrapper {
 	background-color: #34b5aa;
 	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
@@ -72,6 +68,13 @@ nav {
 
 .nav-wrapper i {
 	padding-left: 20px;
+}
+
+
+	/** INDEX **/
+
+.background-white {
+	background-color: #ffffff;
 }
 
 .padre {
@@ -105,6 +108,9 @@ nav {
 	padding-bottom: 20 px;
 }
 
+
+	/** RESEARCH GROUP **/
+
 .group-card {
 	width: 20%;
 	display: inline-block;
@@ -112,6 +118,9 @@ nav {
 	margin: 40px;
 	vertical-align: top;
 }
+
+
+	/** TABS **/
 
 .tab-section {
 	background-color: #34b5aa;
@@ -149,23 +158,91 @@ nav {
 	max-width: 100%;
 }
 
+
+	/** INSTRUMENTATION **/
+
 .row {
 	margin-bottom: 0 !important;
 }
 
-.padding-panel {
-	padding: 25px;
-	text-align: justify;
-}
-
 h5 i {
 	margin-right: 15px;
-	color: #ecbe14;
+	color: #34b5aa;
 }
 
 .date-title {
-	padding: 20px 20px 5px 20px;
+	padding: 5px 20px 5px 20px;
 }
+
+.instrumentation-container.image {
+	margin: 0;
+}
+
+.instrumentation-container.image .instrumentation-image-container {
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+}
+
+.instrumentation-container.image .instrumentation-text-container,
+.instrumentation-container.image .instrumentation-image-container {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.instrumentation-container.image .instrumentation-image-container img {
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.instrumentation-container.image .instrumentation-image-container img.active {
+	border-radius: 0;
+}
+
+.instrumentation-container.image .instrumentation-text-container {
+	width: calc(100% - 140px);
+	width: -webkit-calc(100% - 140px);
+	width: -moz-calc(100% - 140px);
+	width: -ms-calc(100% - 140px);
+	width: -o-calc(100% - 140px);
+	padding: 20px 0;
+	border-bottom: none;
+}
+
+.instrumentation-container .instrumentation-text-container p, 
+.instrumentation-container .instrumentation-text-container span {
+	padding: 0;
+	margin: 0;
+}
+
+
+	/** CARDS INSTRUMENTATION **/
+
+.ellipsis-short {
+	text-align: justify;
+	height: 88px;
+}
+
+.card .card-action {
+	text-align: right;
+}
+
+.card .card-action a {
+	margin-right: 0;
+}
+
+.modal .max-width {
+	max-width: 100%;
+	width: 100%;
+}
+
+
+	/** PUBLICATIONS **/
 
 .padding-content p {
 	padding: 5px 50px;
@@ -186,37 +263,56 @@ h5 i {
 	padding: 5px 0;
 }
 
-#tab-PhD .padding-content {
-	margin: 1em 0;
-	padding: 5px 0;
+.publication-container {
+	margin: 0 50px;
 }
 
-#tab-master .padding-content {
-	margin: 1em 0;
-	padding: 5px 0;
+.publication-container .publication-text-container {
+	width: 100%;
+	padding: 20px 10px;
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
 }
 
-#tab-undergraduate .padding-content {
-	margin: 1em 0;
-	padding: 5px 0;
+.publication-container:last-child .publication-text-container {
+	border-bottom: none;
 }
 
-.background-projects {
-	padding: 70px;
-	background-color: #eeeeee;
+.publication-container .publication-text-container p, 
+.publication-container .publication-text-container span {
+	padding: 0;
+	margin: 0;
 }
 
-.background-projects .padding-content {
-	margin: 1em 0;
-	padding: 5px 0;
-}
+
+	/** CONFERENCES **/
 
 .collapsible-header i {
 	color: #34b5aa;
 }
 
 .padding-collapsible {
-	padding: 30px;
+	padding: 20px;
+	background-color: white;
+}
+
+.padding-collapsible-conference {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.padding-collapsible-conference:last-child {
+	border-bottom: none;
+}
+
+
+	/** PROJECTS **/
+
+.background-projects {
+	padding: 70px;
+	background-color: #eeeeee;
 }
 
 .project-panel {
@@ -266,106 +362,39 @@ h5 i {
 	vertical-align: middle;
 }
 
-/** Publications and Instrumentation **/
 
-.publication-container {
-	width: 100%;
+	/** THESIS **/
+
+#tab-PhD .padding-content {
+	padding: 5px 0;
+}
+
+#tab-master .padding-content {
+	padding: 5px 0;
+}
+
+#tab-undergraduate .padding-content {
+	padding: 5px 0;
+}
+
+.thesis-container {
 	margin: 0 50px;
-} 
+}
 
-.publication-container.image {
-	margin: 0;
-} 
-
-.publication-container .publication-icon-container, .publication-container .publication-text-container, instrumentation-container.image .instrumentation-image-container {
+.thesis-container .thesis-text-container {
+	width: 100%;
+	padding: 20px 10px;
+	border-bottom: 1px solid #ccc;
 	display: inline-block;
 	vertical-align: top;
 	height: 100%;
 }
 
-.publication-container .publication-icon-container {
-	width: 70px;
-	height: 100%;
-	margin-top: 20px;
-}
-
-.instrumentation-container.image .instrumentation-image-container {
-	width: 90px;
-	height: 90px;
-	margin-right: 20px;
-}
-
-.instrumentation-container.image .instrumentation-text-container,
-.instrumentation-container.image .instrumentation-image-container {
-	display: inline-block;
-	vertical-align: middle;
-
-}
-
-.instrumentation-container.image .instrumentation-image-container img {
-	width: 90px;
-	height: 90px;
-	border-radius: 50%;
-	cursor: pointer;
-}
-
-.instrumentation-container.image .instrumentation-image-container img.active {
-	border-radius: 0;
-}
-
-.publication-container .publication-icon-container i {
-	font-size: 32px;
-	color: #34b5aa;
-}
-
-.publication-container .publication-text-container {
-	width: calc(100% - 170px);
-	width: -webkit-calc(100% - 170px);
-	width: -moz-calc(100% - 170px);
-	width: -ms-calc(100% - 170px);
-	width: -o-calc(100% - 170px);
-	padding: 20px 0;
-	border-bottom: 1px solid #ccc;
-}
-
-.instrumentation-container.image .instrumentation-text-container {
-	width: calc(100% - 140px);
-	width: -webkit-calc(100% - 140px);
-	width: -moz-calc(100% - 140px);
-	width: -ms-calc(100% - 140px);
-	width: -o-calc(100% - 140px);
-	padding: 20px 0;
+.thesis-container:last-child .thesis-text-container {
 	border-bottom: none;
 }
 
-.publication-container:last-child .publication-text-container {
-	border-bottom: none;
-}
-
-.publication-container .publication-text-container p, 
-.publication-container .publication-text-container span,
-.instrumentation-container .instrumentation-text-container p, 
-.instrumentation-container .instrumentation-text-container span {
+.thesis-container .thesis-text-container span {
 	padding: 0;
 	margin: 0;
-}
-
-/** Cards instrumentation **/
-
-.ellipsis-short {
-	text-align: justify;
-	height: 88px;
-}
-
-.card .card-action {
-	text-align: right;
-}
-
-.card .card-action a {
-	margin-right: 0;
-}
-
-.modal .max-width {
-	max-width: 100%;
-	width: 100%;
 }

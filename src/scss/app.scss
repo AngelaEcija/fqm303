@@ -1,5 +1,16 @@
 @charset 'UTF-8';
 
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+  #{$property}: $value;
+}
+
+@mixin transition($time) {
+    @include prefix(transition, all $time !important, webkit ms moz o);
+}
+
 @import "compass/css3";
 @import "settings";
 @import "index";

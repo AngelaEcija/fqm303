@@ -24,6 +24,8 @@ main {
 	-ms-flex: 1;
 	flex: 1;
 	background-color: #eeeeee;
+	background: url('../img/background.svg') left top;
+	background-size: 200px;
 }
 
 footer {
@@ -73,12 +75,14 @@ nav {
 
 	/** INDEX **/
 
-.background-white {
-	background-color: #ffffff;
+main.background-white {
+	background: #ffffff;
 }
 
 .padre {
-	background-color: #eeeeee;
+	background: url('../img/background.svg') center center;
+
+	color: #444;
 }
 
 .title-ppal {
@@ -90,6 +94,7 @@ nav {
 
 .title-ppal h2 {
 	text-align: center;
+	line-height: 130%;
 }
 
 .research-lines {
@@ -151,7 +156,6 @@ nav {
 
 #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national {
 	padding: 50px;
-	background-color: #eeeeee
 }
 
 .container-tabs .container {
@@ -343,7 +347,6 @@ h5 i {
 
 .background-projects {
 	padding: 70px;
-	background-color: #eeeeee;
 }
 
 .project-panel {

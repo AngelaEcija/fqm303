@@ -116,12 +116,42 @@ main.background-white {
 
 	/** RESEARCH GROUP **/
 
+.separator {
+	margin-top: 50px;
+	text-align: center;
+}
+
 .group-card {
-	width: 15%;
+	width: $wrapper / 5 + px;
 	display: inline-block;
 	padding: 0;
-	margin: 40px;
+	margin: 20px;
 	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+
+	.card-image {
+		width: $wrapper / 5 + px;
+		height: $wrapper / 5 + px;
+
+		img {
+			width: inherit;
+			height: inherit;
+		 	object-fit: cover;
+		}
+	}
+
+	.card-content {
+	
+		.card-title {
+			line-height: 120%;
+		}
+
+		.card-paragraph {
+			margin-top: 20px;
+		}
+	}
 }
 
 

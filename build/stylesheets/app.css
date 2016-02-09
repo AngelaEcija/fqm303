@@ -111,12 +111,35 @@ main.background-white {
 }
 
 /** RESEARCH GROUP **/
+.separator {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .group-card {
-  width: 15%;
+  width: 256px;
   display: inline-block;
   padding: 0;
-  margin: 40px;
+  margin: 20px;
   vertical-align: top;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+.group-card .card-image {
+  width: 256px;
+  height: 256px;
+}
+.group-card .card-image img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+.group-card .card-content .card-title {
+  line-height: 120%;
+}
+.group-card .card-content .card-paragraph {
+  margin-top: 20px;
 }
 
 /** TABS **/

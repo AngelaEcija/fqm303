@@ -106,8 +106,10 @@ main.background-white {
 
 .title-section {
   color: #ecbe14;
-  padding-top: 20px;
-  padding-bottom: 20 px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /** RESEARCH GROUP **/
@@ -150,6 +152,17 @@ main.background-white {
 }
 .group-card .card-content .card-paragraph {
   margin-top: 20px;
+}
+
+.research .card-content {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 202px;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
 /** TABS **/

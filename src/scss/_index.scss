@@ -66,7 +66,7 @@ nav {
 
 .logo-wrapper img {
 	height: 70px;
-} 
+}
 
 .nav-wrapper i {
 	padding-left: 20px;
@@ -109,8 +109,10 @@ main.background-white {
 
 .title-section {
 	color:#ecbe14;
-	padding-top: 20px;
-	padding-bottom: 20 px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 
@@ -153,7 +155,7 @@ main.background-white {
 	}
 
 	.card-content {
-	
+
 		.card-title {
 			line-height: 120%;
 		}
@@ -162,6 +164,13 @@ main.background-white {
 			margin-top: 20px;
 		}
 	}
+}
+
+.research .card-content {
+	@include flexbox();
+	height: 202px;
+	flex-flow: column wrap;
+	justify-content: center;
 }
 
 
@@ -289,7 +298,7 @@ h5 i {
 	border-bottom: none;
 }
 
-.instrumentation-container .instrumentation-text-container p, 
+.instrumentation-container .instrumentation-text-container p,
 .instrumentation-container .instrumentation-text-container span {
 	padding: 0;
 	margin: 0;
@@ -355,7 +364,7 @@ h5 i {
 	border-bottom: none;
 }
 
-.publication-container .publication-text-container p, 
+.publication-container .publication-text-container p,
 .publication-container .publication-text-container span {
 	padding: 0;
 	margin: 0;

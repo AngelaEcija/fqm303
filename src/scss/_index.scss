@@ -121,6 +121,16 @@ main.background-white {
 	text-align: center;
 }
 
+.section-title {
+	font-size: 50px;
+	padding: 50px 10px 10px 10px;
+}
+
+.subsection-title {
+	font-size: 30px;
+	padding: 50px 10px 10px 10px;
+}
+
 .group-card {
 	width: $wrapper / 5 + px;
 	display: inline-block;

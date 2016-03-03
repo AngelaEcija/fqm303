@@ -1,6 +1,6 @@
 function activeClass(url) {
-	var urlWithoutSlash = url.slice(1);
-	$("nav").find("a[href='" + urlWithoutSlash + "']").parent().addClass('active');
+	var urlWithoutSlash = url.split('grupos/FQM-303/');
+	$("nav").find("a[href='" + urlWithoutSlash[1] + "']").parent().addClass('active');
 }
 
 function openMod(id) {

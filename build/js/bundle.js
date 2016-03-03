@@ -12,6 +12,7 @@ function openMod(id) {
 $(function(){
 	$( "nav" ).load( "components/header.html", function(){
 		activeClass(window.location.pathname);
+		$(".button-collapse").sideNav();
 	} );
 
 	$( "footer" ).load( "components/footer.html");
@@ -34,7 +35,7 @@ $(function(){
 	});
 });
 
-$(".button-collapse").sideNav();
+
 
 
 

@@ -24,7 +24,7 @@ main {
   -ms-flex: 1;
   flex: 1;
   background-color: #eeeeee;
-  background: url("../img/background.svg") left top;
+  background: url("../img/background.jpg") left top;
   background-size: 200px;
 }
 
@@ -78,7 +78,7 @@ main.background-white {
 }
 
 .padre {
-  background: url("../img/background.svg") center center;
+  background: url("../img/background.jpg") center center;
   color: #444;
 }
 

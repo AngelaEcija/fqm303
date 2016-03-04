@@ -3,25 +3,33 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
   display: flex;
   -webkit-flex-direction: column;
+  -moz-flex-direction: column;
   -ms-flex-direction: column;
+  -o-flex-direction: column;
   flex-direction: column;
-  min-height: -webkit-calc(100vh - 250px);
-  min-height: -moz-calc(100vh - 250px);
-  min-height: -ms-calc(100vh - 250px);
+  -webkit-min-height: calc(100vh - 250px);
+  -moz-min-height: calc(100vh - 250px);
+  -ms-min-height: calc(100vh - 250px);
+  -o-min-height: calc(100vh - 250px);
   min-height: calc(100vh - 250px);
 }
 
 main {
   -webkit-box-flex: 1;
   -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
   -webkit-flex: 1;
+  -moz-flex: 1;
   -ms-flex: 1;
+  -o-flex: 1;
   flex: 1;
   background-color: #eeeeee;
   background: url("../img/background.jpg") left top;
@@ -34,6 +42,11 @@ footer {
   position: absolute;
   width: 100%;
   margin-top: 0 !important;
+}
+@media only screen and (max-width: 996px) {
+  footer {
+    height: auto;
+  }
 }
 
 .footer-description {
@@ -55,6 +68,18 @@ footer blockquote, footer ul {
 nav {
   background-color: #34b5aa !important;
 }
+@media only screen and (max-width: 996px) {
+  nav {
+    height: 64px;
+    line-height: 64px;
+  }
+}
+@media only screen and (max-width: 996px) {
+  nav .button-collapse i {
+    height: 64px;
+    line-height: 64px;
+  }
+}
 
 .nav-wrapper {
   background-color: #34b5aa;
@@ -62,6 +87,7 @@ nav {
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   -o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
 }
 
 .logo-wrapper img {
@@ -93,11 +119,22 @@ main.background-white {
   text-align: center;
   line-height: 130%;
 }
+@media only screen and (max-width: 996px) {
+  .title-ppal h2 {
+    line-height: 36px;
+    font-size: 36px;
+  }
+}
 
 .research-lines {
   margin-top: 75px;
   margin-bottom: 75px;
-  text-align: justify;
+}
+@media only screen and (max-width: 996px) {
+  .research-lines {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .clase-borde {
@@ -106,8 +143,10 @@ main.background-white {
 
 .title-section {
   color: #ecbe14;
-  padding-top: 20px;
-  padding-bottom: 20 px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /** RESEARCH GROUP **/
@@ -120,10 +159,23 @@ main.background-white {
   font-size: 50px;
   padding: 50px 10px 10px 10px;
 }
+@media only screen and (max-width: 650px) {
+  .section-title {
+    padding: 10px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
 
 .subsection-title {
   font-size: 30px;
   padding: 50px 10px 10px 10px;
+}
+@media only screen and (max-width: 650px) {
+  .subsection-title {
+    padding: 10px;
+    line-height: 30px;
+  }
 }
 
 .group-card {
@@ -132,24 +184,51 @@ main.background-white {
   padding: 0;
   margin: 20px;
   vertical-align: top;
-  display: inline-block;
   position: relative;
   overflow: hidden;
+}
+@media only screen and (max-width: 650px) {
+  .group-card {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .group-card .card-image {
   width: 256px;
   height: 256px;
 }
-.group-card .card-image img {
+.group-card .card-image .image-background {
   width: inherit;
   height: inherit;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 .group-card .card-content .card-title {
   line-height: 120%;
 }
 .group-card .card-content .card-paragraph {
   margin-top: 20px;
+}
+
+.research .card-content {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  height: 202px;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  -o-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
 }
 
 /** TABS **/
@@ -164,6 +243,7 @@ main.background-white {
   -moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   -ms-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   -o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
 }
 
 .tabs .tab a {
@@ -182,6 +262,11 @@ main.background-white {
 
 #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national {
   padding: 50px;
+}
+@media only screen and (max-width: 996px) {
+  #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national {
+    padding: 0 0.75rem;
+  }
 }
 
 .container-tabs .container {
@@ -215,10 +300,21 @@ h5 i {
   vertical-align: top;
   height: 100%;
 }
+@media only screen and (max-width: 650px) {
+  .instrumentation-container.image .instrumentation-image-container {
+    width: 60px !important;
+    height: 60px !important;
+  }
+}
 
 .instrumentation-container.image .instrumentation-text-container {
   display: inline-block;
   vertical-align: middle;
+}
+@media only screen and (max-width: 650px) {
+  .instrumentation-container.image .instrumentation-text-container {
+    vertical-align: top;
+  }
 }
 
 .instrumentation-container.image .instrumentation-image-container {
@@ -234,6 +330,11 @@ h5 i {
   border-radius: 50%;
   overflow: hidden;
   background-color: white;
+}
+@media only screen and (max-width: 650px) {
+  .instrumentation-container.image .instrumentation-image-container {
+    vertical-align: top;
+  }
 }
 
 .instrumentation-container.image .instrumentation-image-container .materialboxed {
@@ -260,6 +361,12 @@ h5 i {
   -o-transition: none !important;
   transition: none !important;
 }
+@media only screen and (max-width: 996px) {
+  .instrumentation-container.image .instrumentation-image-container .materialboxed.active img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 .instrumentation-container.image .instrumentation-image-container .materialboxed:hover {
   will-change: initial !important;
@@ -271,13 +378,18 @@ h5 i {
 }
 
 .instrumentation-container.image .instrumentation-text-container {
+  -webkit-width: calc(100% - 140px);
+  -moz-width: calc(100% - 140px);
+  -ms-width: calc(100% - 140px);
+  -o-width: calc(100% - 140px);
   width: calc(100% - 140px);
-  width: -webkit-calc(100% - 140px);
-  width: -moz-calc(100% - 140px);
-  width: -ms-calc(100% - 140px);
-  width: -o-calc(100% - 140px);
   padding: 20px 0;
   border-bottom: none;
+}
+@media only screen and (max-width: 650px) {
+  .instrumentation-container.image .instrumentation-text-container {
+    padding: 0;
+  }
 }
 
 .instrumentation-container .instrumentation-text-container p,
@@ -374,21 +486,51 @@ h5 i {
 
 .project-panel {
   width: 40%;
-  height: 375px;
-  display: inline-block;
+  height: 400px;
   padding: 0;
   margin: 40px;
   vertical-align: top;
   text-align: center;
+  -webkit-display: inline-flex;
+  -moz-display: inline-flex;
+  -ms-display: inline-flex;
+  -o-display: inline-flex;
+  display: inline-flex;
+  -webkit-flex-flow: column;
+  -moz-flex-flow: column;
+  -ms-flex-flow: column;
+  -o-flex-flow: column;
+  flex-flow: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
 }
 
 .title-projects {
-  margin: 25px;
+  margin: 0 25px;
 }
 
 .card-projects {
-  margin: 25px;
+  margin: 0 25px;
   text-align: justify;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  -o-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  height: 260px;
 }
 
 .card-description {
@@ -398,6 +540,11 @@ h5 i {
 
 .card-description a {
   color: black;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
 }
 
 .tooltip {

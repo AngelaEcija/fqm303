@@ -125,6 +125,12 @@ main.background-white {
     font-size: 36px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .title-ppal h2 {
+    line-height: 26px;
+    font-size: 26px;
+  }
+}
 
 .research-lines {
   margin-top: 75px;
@@ -389,6 +395,11 @@ h5 i {
 @media only screen and (max-width: 650px) {
   .instrumentation-container.image .instrumentation-text-container {
     padding: 0;
+    -webkit-width: calc(100% - 80px);
+    -moz-width: calc(100% - 80px);
+    -ms-width: calc(100% - 80px);
+    -o-width: calc(100% - 80px);
+    width: calc(100% - 80px);
   }
 }
 
@@ -427,18 +438,13 @@ h5 i {
   display: block;
 }
 
-#tab-books .padding-content {
-  margin: 1em 0;
-  padding: 5px 0;
-}
-
-#tab-patents .padding-content {
-  margin: 1em 0;
-  padding: 5px 0;
-}
-
 .publication-container {
   margin: 0 50px;
+}
+@media only screen and (max-width: 996px) {
+  .publication-container {
+    margin: 0;
+  }
 }
 
 .publication-container .publication-text-container {
@@ -461,6 +467,12 @@ h5 i {
 }
 
 /** CONFERENCES **/
+@media only screen and (max-width: 996px) {
+  .collapsible.popout {
+    margin: 50px 0;
+  }
+}
+
 .collapsible-header i {
   color: #34b5aa;
 }
@@ -474,6 +486,11 @@ h5 i {
   padding: 20px;
   border-bottom: 1px solid #ccc;
 }
+@media only screen and (max-width: 996px) {
+  .padding-collapsible-conference .padding-content p {
+    padding: 5px 0;
+  }
+}
 
 .padding-collapsible-conference:last-child {
   border-bottom: none;
@@ -482,6 +499,21 @@ h5 i {
 /** PROJECTS **/
 .background-projects {
   padding: 70px;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+@media only screen and (max-width: 996px) {
+  .background-projects {
+    padding: 20px;
+  }
 }
 
 .project-panel {
@@ -507,6 +539,23 @@ h5 i {
   -o-justify-content: center;
   justify-content: center;
 }
+@media only screen and (max-width: 996px) {
+  .project-panel {
+    margin: 20px;
+    height: 445px;
+    -webkit-width: calc(50% - 40px);
+    -moz-width: calc(50% - 40px);
+    -ms-width: calc(50% - 40px);
+    -o-width: calc(50% - 40px);
+    width: calc(50% - 40px);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .project-panel {
+    margin: 20px 0;
+    width: 100%;
+  }
+}
 
 .title-projects {
   margin: 0 25px;
@@ -514,7 +563,7 @@ h5 i {
 
 .card-projects {
   margin: 0 25px;
-  text-align: justify;
+  text-align: left;
   -webkit-display: flex;
   -moz-display: flex;
   -ms-display: flex;
@@ -581,6 +630,11 @@ h5 i {
 
 .thesis-container {
   margin: 0 50px;
+}
+@media only screen and (max-width: 996px) {
+  .thesis-container {
+    margin: 0;
+  }
 }
 
 .thesis-container .thesis-text-container {

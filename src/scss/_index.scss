@@ -100,6 +100,11 @@ main.background-white {
 		line-height: 36px;
 		font-size: 36px;
 	}
+
+	@include respond(phone) {
+		line-height: 26px;
+		font-size: 26px;
+	}
 }
 
 .research-lines {
@@ -338,6 +343,7 @@ h5 i {
 
 	@include respond(tablet) {
 		padding: 0;
+		@include prefix(width, calc(100% - 80px), webkit moz ms o);
 	}
 }
 
@@ -380,18 +386,12 @@ h5 i {
 	display: block;
 }
 
-#tab-books .padding-content{
-	margin: 1em 0;
-	padding: 5px 0;
-}
-
-#tab-patents .padding-content {
-	margin: 1em 0;
-	padding: 5px 0;
-}
-
 .publication-container {
 	margin: 0 50px;
+
+	@include respond(mobile) {
+		margin: 0;
+	}
 }
 
 .publication-container .publication-text-container {
@@ -416,6 +416,12 @@ h5 i {
 
 	/** CONFERENCES **/
 
+.collapsible.popout {
+	@include respond(mobile) {
+		margin: 50px 0;
+	}
+}
+
 .collapsible-header i {
 	color: #34b5aa;
 }
@@ -428,6 +434,12 @@ h5 i {
 .padding-collapsible-conference {
 	padding: 20px;
 	border-bottom: 1px solid #ccc;
+
+	.padding-content p {
+		@include respond(mobile) {
+			padding: 5px 0;
+		}
+	}
 }
 
 .padding-collapsible-conference:last-child {
@@ -439,6 +451,12 @@ h5 i {
 
 .background-projects {
 	padding: 70px;
+	@include prefix(display, flex, webkit moz ms o);
+	@include prefix(flex-flow, row wrap, webkit moz ms o);
+
+	@include respond(mobile) {
+		padding: 20px;
+	}
 }
 
 .project-panel {
@@ -451,6 +469,17 @@ h5 i {
 	@include prefix(display, inline-flex, webkit moz ms o);
 	@include prefix(flex-flow, column, webkit moz ms o);
 	@include prefix(justify-content, center, webkit moz ms o);
+
+	@include respond(mobile) {
+		margin: 20px;
+		height: 445px;
+		@include prefix(width, calc(50% - 40px), webkit moz ms o);
+	}
+
+	@include respond(tablet) {
+		margin: 20px 0;
+		width: 100%;
+	}
 }
 
 .title-projects {
@@ -459,7 +488,7 @@ h5 i {
 
 .card-projects {
 	margin: 0 25px;
-	text-align: justify;
+	text-align: left;
 	@include prefix(display, flex, webkit moz ms o);
 	@include prefix(flex-flow, column wrap, webkit moz ms o);
 	@include prefix(justify-content, center, webkit moz ms o);
@@ -512,6 +541,10 @@ h5 i {
 
 .thesis-container {
 	margin: 0 50px;
+
+	@include respond(mobile) {
+		margin: 0;
+	}
 }
 
 .thesis-container .thesis-text-container {

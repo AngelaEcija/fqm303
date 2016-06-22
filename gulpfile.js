@@ -6,7 +6,7 @@ var gulp         = require('gulp');
 var gutil        = require('gulp-util');
 var gulpSequence = require('gulp-sequence');
 var processhtml  = require('gulp-minify-html');
-var compass      = require('gulp-compass');
+var sass         = require('gulp-sass');
 var watch        = require('gulp-watch');
 var minifycss    = require('gulp-minify-css');
 var uglify       = require('gulp-uglify');
@@ -49,12 +49,8 @@ gulp.task('html', function() {
 // sass
 gulp.task('sass', function() {
   gulp.src('./src/scss/**/*.scss')
-    .pipe(compass({
-      config_file: './config.rb',
-      css: 'build/stylesheets',
-      sass: 'src/scss'
-    }))
-    .on('error', onError)
+    .pipe(sass())
+    .on('error', sass.logError)
     .pipe(prod ? minifycss() : gutil.noop())
     .pipe(gulp.dest('./build/stylesheets'))
     .pipe(browserSync.stream());

@@ -148,16 +148,6 @@ main.background-white {
 	}
 }
 
-.subsection-title {
-	font-size: 30px;
-	padding: 50px 10px 10px 10px;
-
-	@include respond(tablet) {
-		padding: 10px;
-		line-height: 30px;
-	}
-}
-
 .group-card {
 	width: $wrapper / 5 + px;
 	display: inline-block;
@@ -232,7 +222,7 @@ main.background-white {
 	height: 3px;
 }
 
-#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national {
+#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-permanent, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign {
 	padding: 50px;
 
 	@include respond(mobile) {

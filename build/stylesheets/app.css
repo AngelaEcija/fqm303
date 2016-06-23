@@ -126,7 +126,7 @@ main.background-white {
 
 /** RESEARCH GROUP **/
 .separator {
-  margin-top: 50px;
+  margin: 50px 40px;
   text-align: center; }
 
 .section-title {
@@ -139,7 +139,7 @@ main.background-white {
       line-height: 36px; } }
 
 .group-card {
-  width: 256px;
+  width: 213.33333px;
   display: inline-block;
   padding: 0;
   margin: 20px;
@@ -152,18 +152,23 @@ main.background-white {
       margin-left: auto;
       margin-right: auto; } }
   .group-card .card-image {
-    width: 256px;
-    height: 256px; }
+    width: 213.33333px;
+    height: 213.33333px; }
     .group-card .card-image .image-background {
       width: inherit;
       height: inherit;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: 50% 50%; }
-  .group-card .card-content .card-title {
-    line-height: 120%; }
-  .group-card .card-content .card-paragraph {
-    margin-top: 20px; }
+  .group-card .card-content {
+    padding: 10px; }
+    .group-card .card-content .card-title {
+      line-height: 100%;
+      font-size: 20px;
+      font-weight: 400; }
+    .group-card .card-content .card-paragraph {
+      margin-top: 10px;
+      font-size: 15px; }
 
 .research .card-content {
   -webkit-display: flex;
@@ -171,7 +176,7 @@ main.background-white {
   -ms-display: flex;
   -o-display: flex;
   display: flex;
-  height: 202px;
+  height: 160px;
   -webkit-flex-flow: column wrap;
   -moz-flex-flow: column wrap;
   -ms-flex-flow: column wrap;
@@ -207,10 +212,10 @@ main.background-white {
   background-color: #ecbe14;
   height: 3px; }
 
-#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-permanent, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign {
+#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-professor, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign, #tab-aids, #tab-projects {
   padding: 50px; }
   @media only screen and (max-width: 996px) {
-    #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-permanent, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign {
+    #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-professor, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign, #tab-aids, #tab-projects {
       padding: 0 0.75rem; } }
 
 .container-tabs .container {

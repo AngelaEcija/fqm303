@@ -202,10 +202,6 @@ main.background-white {
         color: #333333; }
         .group-card .card-reveal .card-paragraph a span {
           font-weight: 500; }
-        .group-card .card-reveal .card-paragraph a a.tooltip .tooltipped {
-          margin: 50px; }
-      .group-card .card-reveal .card-paragraph i {
-        color: #34b5aa; }
       .group-card .card-reveal .card-paragraph a:hover {
         color: #34b5aa; }
 

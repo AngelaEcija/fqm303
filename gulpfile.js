@@ -46,6 +46,13 @@ gulp.task('html', function() {
     .pipe(browserSync.stream());
 });
 
+// htaccess
+gulp.task('htaccess', function() {
+  return gulp.src('./src/.htaccess')
+    .pipe(gulp.dest('build'))
+    .pipe(browserSync.stream());
+});
+
 // sass
 gulp.task('sass', function() {
   gulp.src('./src/scss/**/*.scss')
@@ -69,4 +76,4 @@ gulp.task('serve', function() {
 });
 
 // use gulp-sequence to finish building html, sass and js before first page load
-gulp.task('default', gulpSequence(['html', 'sass', 'js'], 'serve'));
+gulp.task('default', gulpSequence(['htaccess', 'html', 'sass', 'js'], 'serve'));

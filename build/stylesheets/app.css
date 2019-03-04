@@ -35,7 +35,6 @@ main {
   background-size: 200px; }
 
 footer {
-  height: 250px;
   background-color: #333333 !important;
   width: 100%;
   margin-top: 0 !important; }
@@ -45,6 +44,10 @@ footer {
 
 .footer-description {
   border-left: 5px solid #34b5aa !important; }
+  .footer-description a {
+    color: #ffffff; }
+  .footer-description a:hover {
+    color: #34b5aa; }
 
 footer h5 {
   color: #34b5aa; }
@@ -86,17 +89,19 @@ main.background-white {
 
 .padre {
   background: url("../img/background.jpg") center center;
+  filter: brightness(115%);
   color: #444; }
 
 .title-ppal {
   margin: 0 auto;
-  width: 80% !important;
+  width: 70% !important;
   padding-top: 20px;
   padding-bottom: 20px; }
 
 .title-ppal h2 {
   text-align: center;
-  line-height: 130%; }
+  line-height: 130%;
+  font-weight: 500; }
   @media only screen and (max-width: 996px) {
     .title-ppal h2 {
       line-height: 36px;
@@ -109,6 +114,8 @@ main.background-white {
 .research-lines {
   margin-top: 75px;
   margin-bottom: 75px; }
+  .research-lines .collection-item {
+    font-size: 120%; }
   @media only screen and (max-width: 996px) {
     .research-lines {
       margin-top: 40px;
@@ -183,16 +190,16 @@ main.background-white {
       font-size: 15px; }
   .group-card .card-reveal {
     padding: 10px; }
-    .group-card .card-reveal .desactivator {
-      display: block;
-      cursor: pointer;
-      text-align: center; }
     .group-card .card-reveal .card-title {
       line-height: 100%;
       font-size: 20px;
       font-weight: 500; }
-      .group-card .card-reveal .card-title i {
-        margin-top: 5px; }
+      .group-card .card-reveal .card-title .desactivator {
+        display: block;
+        cursor: pointer;
+        text-align: center; }
+        .group-card .card-reveal .card-title .desactivator i {
+          margin-top: 5px; }
       .group-card .card-reveal .card-title .desactivator-title {
         margin: 5px 15px 15px 15px; }
     .group-card .card-reveal .card-paragraph {

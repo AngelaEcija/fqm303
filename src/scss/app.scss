@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+﻿@charset 'UTF-8';
 
 $wrapper:               1280;
 $wrapperMobile:         996;
@@ -51,7 +51,6 @@ body {
 	@include prefix(display, flex, webkit moz ms o);
 	@include prefix(flex-direction, column, webkit moz ms o);
 	@include prefix(height, 100vh, webkit moz ms o);
-	// @include prefix(min-height, calc(100vh - 250px), webkit moz ms o);
 }
 
 main {
@@ -63,7 +62,6 @@ main {
 }
 
 footer {
-	height: 250px;
 	background-color: #333333 !important;
 	width: 100%;
 	margin-top: 0 !important;
@@ -75,6 +73,13 @@ footer {
 
 .footer-description {
 	border-left:5px solid #34b5aa !important;
+	a {
+		color: #ffffff;
+	}
+
+	a:hover {
+		color: #34b5aa;
+	}
 }
 
 footer h5 {
@@ -127,12 +132,13 @@ main.background-white {
 
 .padre {
 	background: url('../img/background.jpg') center center;
+	filter: brightness(115%);
 	color: #444;
 }
 
 .title-ppal {
 	margin: 0 auto;
-	width: 80% !important;
+	width: 70% !important;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -140,6 +146,7 @@ main.background-white {
 .title-ppal h2 {
 	text-align: center;
 	line-height: 130%;
+	font-weight: 500;
 
 	@include respond(mobile) {
 		line-height: 36px;
@@ -155,6 +162,9 @@ main.background-white {
 .research-lines {
 	margin-top: 75px;
 	margin-bottom: 75px;
+	.collection-item {
+		font-size: 120%;
+	}
 
 	@include respond(mobile) {
 		margin-top: 40px;
@@ -255,19 +265,18 @@ main.background-white {
 
 		padding: 10px;
 
-		.desactivator {
-			display: block;
-			cursor: pointer;
-			text-align: center;
-		}
-
 		.card-title {
 			line-height: 100%;
 			font-size: 20px;
 			font-weight: 500;
 
-			i {
-				margin-top: 5px;
+			.desactivator {
+				display: block;
+				cursor: pointer;
+				text-align: center;
+				i {
+					margin-top: 5px;
+				}
 			}
 
 			.desactivator-title {
@@ -278,10 +287,8 @@ main.background-white {
 		.card-paragraph {
 			font-size: 15px;
 			margin: 15px 0;
-
 			a {
 				color: #333333;
-
 				span {
 					font-weight: 500;
 				}

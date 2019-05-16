@@ -10,6 +10,8 @@ function openMod(id) {
 
 
 $(function(){
+	$('.modal').modal();
+	
 	$( "nav" ).load( "components/header.html", function(){
 		activeClass(window.location.pathname);
 		$(".button-collapse").sideNav();

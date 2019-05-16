@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FQM 303</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" href="./stylesheets/app.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -21,121 +21,80 @@
 
         <div class="col s12 tab-section">
           <ul class="tabs">
-            <li class="tab col s4"><a class="active tab-section" href="#tab-professor">Professors</a></li>
-            <li class="tab col s4"><a class="tab-section" href="#tab-phd">PhD Students</a></li>
-            <li class="tab col s4"><a class="tab-section" href="#tab-master">Master Students</a></li>
-            <li class="tab col s4"><a class="tab-section" href="#tab-undergraduate">Undergraduate Students</a></li>
-            <li class="tab col s4"><a class="tab-section" href="#tab-foreign">Foreign Researchers</a></li>
+            <li class="tab col s2"><a class="active tab-section" href="#tab-permanent-staff">Permanent Staff</a></li>
+            <li class="tab col s2"><a class="tab-section" href="#tab-doctors">Doctors</a></li>
+            <li class="tab col s2"><a class="tab-section" href="#tab-phd">PhD Students</a></li>
+            <li class="tab col s2"><a class="tab-section" href="#tab-master">Master Students</a></li>
+            <li class="tab col s2"><a class="tab-section" href="#tab-undergraduate">Undergraduate Students</a></li>
+            <li class="tab col s2"><a class="tab-section" href="#tab-foreign">Foreign Researchers</a></li>
           </ul>
         </div>
 
-        <div id="tab-professor" class="col s12 container">
+        <div id="tab-permanent-staff" class="col s12 container">
           <div class="separator">
 
-            <div class="card group-card">
-              <div class="card-image">
-                  <div class="image-background" style="background-image: url('img/group/tina.jpg')"></div>
-              </div>
+            <a class="modal-trigger" href="#modal1">
+              <div class="group-card">
+                <div class="card-image">
+                    <div class="circle image-background" style="background-image: url('img/group/juanmanuel.jpg')"></div>
+                </div>
 
-              <div class="card-content">
-                <div class="activator">
-                  <i class="material-icons">expand_less</i>
-                </div>
-                <div class="card-title">
-                  Agustina Gómez Hens
-                </div>
-                <div class="card-paragraph">
-                  <p>
-                    Full Professor
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-reveal">
-                <div class="card-title">
-                  <div class="desactivator">
-                    <i class="material-icons">expand_more</i>
-                  </div>
-                  <div class="desactivator-title">
-                    Agustina Gómez Hens
-                  </div>
-                </div>
-                <div class="card-paragraph">
-                  <a href="mailto:qa1gohea@uco.es" target="_blank">
-                    qa1gohea@uco.es
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="http://www.researcherid.com/rid/B-5130-2016" target="_blank">
-                    <span>ResearcherID:</span> B-5130-2016
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="http://www.orcid.org/0000-0002-1838-6015" target="_blank">
-                    <span>ORCID:</span> 0000-0002-1838-6015
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="https://www.scopus.com/authid/detail.uri?authorId=7003881816" target="_blank">
-                    <span>Scopus Author ID:</span> 7003881816
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div class="card group-card">
-              <div class="card-image">
-                  <div class="image-background" style="background-image: url('img/group/juanmanuel.jpg')"></div>
-              </div>
-
-              <div class="card-content">
-                <div class="activator">
-                  <i class="material-icons">expand_less</i>
-                </div>
-                <div class="card-title">
-                  Juan Manuel Fernández Romero
-                </div>
-                <div class="card-paragraph">
-                  <p>
-                    Group Leader
-                  </p>
-                  <p>
-                    Full Professor
-                  </p>
-                </div>
-              </div>
-
-              <div class="card-reveal">
-                <div class="card-title">
-                  <div class="desactivator">
-                    <i class="material-icons">expand_more</i>
-                  </div>
-                  <div class="desactivator-title">
+                <div class="card-content">
+                  <div class="card-title">
                     Juan Manuel Fernández Romero
                   </div>
-                </div>
-                <div class="card-paragraph">
-                  <a href="mailto:qa1feroj@uco.es" target="_blank">
-                    qa1feroj@uco.es
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="http://www.researcherid.com/rid/H-2300-2015" target="_blank">
-                    <span>ResearcherID:</span> H-2300-2015
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="http://www.orcid.org/0000-0001-8443-1358" target="_blank">
-                    <span>ORCID:</span> 0000-0001-8443-1358
-                  </a>
-                </div>
-                <div class="card-paragraph">
-                  <a href="https://www.scopus.com/authid/detail.uri?authorId=7004169922" target="_blank">
-                    <span>Scopus Author ID:</span> 7004169922
-                  </a>
+                  <div class="card-paragraph">
+                    <p>
+                      Group Leader
+                    </p>
+                    <p>
+                      PhD in Chemistry. Full Professor
+                    </p>
+                  </div>
                 </div>
               </div>
+            </a>
+
+
+            <div id="modal1" class="modal">
+              <div class="modal-content">
+                <i class="right modal-close material-icons">
+                  close
+                </i>
+                <p>Hola</p>
+              </div>
             </div>
+
+                <!--<div class="card-reveal">
+                  <div class="card-title">
+                    <div class="desactivator">
+                      <i class="material-icons">expand_more</i>
+                    </div>
+                    <div class="desactivator-title">
+                      Juan Manuel Fernández Romero
+                    </div>
+                  </div>
+                  <div class="card-paragraph">
+                    <a href="mailto:qa1feroj@uco.es" target="_blank">
+                      qa1feroj@uco.es
+                    </a>
+                  </div>
+                  <div class="card-paragraph">
+                    <a href="http://www.researcherid.com/rid/H-2300-2015" target="_blank">
+                      <span>ResearcherID:</span> H-2300-2015
+                    </a>
+                  </div>
+                  <div class="card-paragraph">
+                    <a href="http://www.orcid.org/0000-0001-8443-1358" target="_blank">
+                      <span>ORCID:</span> 0000-0001-8443-1358
+                    </a>
+                  </div>
+                  <div class="card-paragraph">
+                    <a href="https://www.scopus.com/authid/detail.uri?authorId=7004169922" target="_blank">
+                      <span>Scopus Author ID:</span> 7004169922
+                    </a>
+                  </div>
+                </div>-->
 
             <div class="card group-card">
               <div class="card-image">
@@ -151,7 +110,7 @@
                 </div>
                 <div class="card-paragraph">
                   <p>
-                    Associate Professor
+                    PhD in Chemistry. Full Professor
                   </p>
                 </div>
               </div>
@@ -183,6 +142,175 @@
                 <div class="card-paragraph">
                   <a href="https://www.scopus.com/authid/detail.uri?authorId=6602131716" target="_blank">
                     <span>Scopus Author ID:</span> 6602131716
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div id="tab-doctors" class="col s12 container">
+          <div class="separator">
+
+            <div class="card group-card">
+              <div class="card-image">
+                  <div class="image-background" style="background-image: url('img/group/user-shape.png')"></div>
+              </div>
+
+              <div class="card-content">
+                <div class="activator">
+                  <i class="material-icons">expand_less</i>
+                </div>
+                <div class="card-title">
+                  Matilde Angulo Lucena
+                </div>
+                <div class="card-paragraph">
+                  <p>
+                    PhD in Chemistry. High School Proffesor
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-reveal">
+                <div class="card-title">
+                  <div class="desactivator">
+                    <i class="material-icons">expand_more</i>
+                  </div>
+                  <div class="desactivator-title">
+                    Matilde Angulo Lucena
+                  </div>
+                </div>
+                <div class="card-paragraph">
+                  <a class="tooltip tooltipped" data-position="bottom" data-delay="50" data-tooltip="Stay in the group">
+                    <div class="card-icon">
+                      <i class="material-icons">date_range</i>
+                    </div>
+                    <div class="card-item">
+                      <span>2017 - Present</span>
+                    </div>
+                  </a>
+                </div>
+                <!-- <div class="card-paragraph">
+                  <a href="mailto:q72maagm@uco.es" target="_blank">
+                    q72maagm@uco.es
+                  </a>
+                </div> -->
+              </div>
+            </div>
+
+            <div class="card group-card">
+              <div class="card-image">
+                  <div class="image-background" style="background-image: url('img/group/marisa.jpg')"></div>
+              </div>
+
+              <div class="card-content">
+                <div class="activator">
+                  <i class="material-icons">expand_less</i>
+                </div>
+                <div class="card-title">
+                  Mª Luisa Castillo García
+                </div>
+                <div class="card-paragraph">
+                  <p>
+                    PhD in Chemistry
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-reveal">
+                <div class="card-title">
+                  <div class="desactivator">
+                    <i class="material-icons">expand_more</i>
+                  </div>
+                  <div class="desactivator-title">
+                    Mª Luisa Castillo García
+                  </div>
+                </div>
+                <div class="card-paragraph">
+                  <a class="tooltip tooltipped" data-position="bottom" data-delay="50" data-tooltip="Stay in the group">
+                    <div class="card-icon">
+                      <i class="material-icons">date_range</i>
+                    </div>
+                    <div class="card-item">
+                      <span>2010 - Present</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="mailto:q32cagam@uco.es" target="_blank">
+                    q32cagam@uco.es
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="http://www.orcid.org/0000-0002-2409-1758" target="_blank">
+                    <span>ORCID:</span> 0000-0002-2409-1758
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="https://www.scopus.com/authid/detail.uri?authorId=55507512300" target="_blank">
+                    <span>Scopus Author ID:</span> 55507512300
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card group-card">
+              <div class="card-image">
+                  <div class="image-background" style="background-image: url('img/group/marina.jpg')"></div>
+              </div>
+
+              <div class="card-content">
+                <div class="activator">
+                  <i class="material-icons">expand_less</i>
+                </div>
+                <div class="card-title">
+                  Marina Sierra Rodero
+                </div>
+                <div class="card-paragraph">
+                  <p>
+                    PhD in Chemistry
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-reveal">
+                <div class="card-title">
+                  <div class="desactivator">
+                    <i class="material-icons">expand_more</i>
+                  </div>
+                  <div class="desactivator-title">
+                    Marina Sierra Rodero
+                  </div>
+                </div>
+                <div class="card-paragraph">
+                  <a class="tooltip tooltipped" data-position="bottom" data-delay="50" data-tooltip="Stay in the group">
+                    <div class="card-icon">
+                      <i class="material-icons">date_range</i>
+                    </div>
+                    <div class="card-item">
+                      <span>2007 - Present</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="mailto:q22sirom@uco.es" target="_blank">
+                    q22sirom@uco.es
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="http://www.researcherid.com/rid/H-3220-2015" target="_blank">
+                    <span>ResearcherID:</span> H-3220-2015
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="http://www.orcid.org/0000-0002-4430-9486" target="_blank">
+                    <span>ORCID:</span> 0000-0002-4430-9486
+                  </a>
+                </div>
+                <div class="card-paragraph">
+                  <a href="https://www.scopus.com/authid/detail.uri?authorId=36524011600" target="_blank">
+                    <span>Scopus Author ID:</span> 36524011600
                   </a>
                 </div>
               </div>
@@ -1615,6 +1743,42 @@
               </div>
             </div>
 
+            <div class="card group-card">
+              <div class="card-image">
+                  <div class="image-background" style="background-image: url('img/group/user-shape.png')"></div>
+              </div>
+
+              <div class="card-content">
+                <div class="activator">
+                  <i class="material-icons">expand_less</i>
+                </div>
+                <div class="card-title">
+                  Pedro Benítez Barquero
+                </div>
+              </div>
+
+              <div class="card-reveal">
+                <div class="card-title">
+                  <div class="desactivator">
+                    <i class="material-icons">expand_more</i>
+                  </div>
+                  <div class="desactivator-title">
+                    Pedro Benítez Barquero
+                  </div>
+                </div>
+                <div class="card-paragraph">
+                  <a class="tooltip tooltipped" data-position="bottom" data-delay="50" data-tooltip="Stay in the group">
+                    <div class="card-icon">
+                      <i class="material-icons">date_range</i>
+                    </div>
+                    <div class="card-item">
+                      <span>2013 - 2014</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
@@ -1763,7 +1927,7 @@
 
 
     <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/bundle.js"></script>
 </body>
 

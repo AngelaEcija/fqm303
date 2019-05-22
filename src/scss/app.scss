@@ -56,7 +56,7 @@ body {
 main {
 	@include prefix(box-flex, 1, webkit moz ms o);
 	@include prefix(flex, 1, webkit moz ms o);
-	background-color: #eeeeee;
+	background-color: #f5f5f5;
 	background: url('../img/background.jpg') left top;
 	background-size: 200px;
 }
@@ -243,130 +243,6 @@ main.background-white {
 }
 
 
-	/** RESEARCH GROUP **/
-
-.separator {
-	margin: 50px 40px;
-	text-align: center;
-}
-
-.section-title {
-	font-size: 50px;
-	padding: 50px 10px 10px 10px;
-
-	@include respond(tablet) {
-		padding: 10px;
-		font-size: 36px;
-		line-height: 36px;
-	}
-}
-
-.group-card {
-	width: $wrapper / 5 + px;
-	display: inline-block;
-	padding: 0;
-	margin: 20px;
-	vertical-align: top;
-	position: relative;
-	overflow: hidden;
-
-
-	@include respond(tablet) {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	.card-image {
-		width: $wrapper / 5 + px;
-		height: $wrapper / 5 + px;
-
-		a {
-				color: #333333;
-				span {
-					font-weight: 500;
-				}
-			}
-
-			a:hover {
-				color: #34b5aa;
-			}
-
-		.image-background {
-			width: inherit;
-			height: inherit;
-			background-repeat: no-repeat;
-		 	background-size: cover;
-		 	background-position: 50% 50%;
-		}
-	}
-
-	.card-content {
-
-		padding: 10px;
-		position: relative;
-
-		.card-title {
-			line-height: 100%;
-			font-size: 20px;
-			font-weight: 500;
-			margin: 0 15px;
-		}
-
-		.card-paragraph {
-			margin-top: 10px;
-			font-size: 15px;
-		}
-	}
-
-	.card-reveal {
-
-		padding: 10px;
-
-		.card-title {
-			line-height: 100%;
-			font-size: 20px;
-			font-weight: 500;
-
-			.desactivator {
-				display: block;
-				cursor: pointer;
-				text-align: center;
-				i {
-					margin-top: 5px;
-				}
-			}
-
-			.desactivator-title {
-				margin: 5px 15px 15px 15px;
-			}
-		}
-
-		.card-paragraph {
-			font-size: 15px;
-			margin: 15px 0;
-			a {
-				color: #333333;
-				span {
-					font-weight: 500;
-				}
-			}
-
-			a:hover {
-				color: #34b5aa;
-			}
-		}
-	}
-}
-
-.research .card-content {
-	@include prefix(display, flex, webkit moz ms o);
-	height: 160px;
-	@include prefix(flex-flow, column wrap, webkit moz ms o);
-	@include prefix(justify-content, center, webkit moz ms o);
-}
-
-
 	/** TABS **/
 
 .tab-section {
@@ -397,7 +273,7 @@ main.background-white {
 	height: 3px;
 }
 
-#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-professor, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign, #tab-aids, #tab-projects {
+#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-students, #tab-former, #tab-aids, #tab-projects {
 	padding: 50px;
 
 	@include respond(mobile) {
@@ -408,6 +284,155 @@ main.background-white {
 .container-tabs .container {
 	max-width: 100%;
 }
+
+
+
+	/** RESEARCH GROUP **/
+
+.separator {
+	margin: 40px 30px;
+	text-align: center;
+}
+
+.section-title {
+	font-size: 50px;
+	padding: 50px 10px 10px 10px;
+
+	@include respond(tablet) {
+		padding: 10px;
+		font-size: 36px;
+		line-height: 36px;
+	}
+}
+
+.group-card {
+	width: $wrapper / 3.7 + px;
+	display: inline-block;
+	padding: 0;
+	margin: 10px;
+	vertical-align: top;
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+
+	@include respond(tablet) {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	a {
+		color: #000000;
+	}
+
+	a:hover {
+		color: #ecbe14;
+	}
+
+	.card-image {
+		width: $wrapper / 7 + px;
+		height: $wrapper / 7 + px;
+		margin: auto;
+
+		.image-background {
+			width: inherit;
+			height: inherit;
+			background-repeat: no-repeat;
+		 	background-size: cover;
+		 	background-position: 50% 50%;
+		}
+	}
+
+	.card-description {
+		width: 97%;
+		margin: 12px auto;
+		position: relative;
+		background-color: #ffffff;
+		border-radius: 5px;
+
+		.card-title {
+			line-height: 100%;
+			font-size: 20px;
+			font-weight: 400;
+			margin: 2px 15px;
+		}
+
+		.card-paragraph p {
+			font-size: 15px;
+			margin: 0;
+		}
+	}
+}
+
+.modal{
+	width: 80%;
+
+	.card-modal {
+
+		.modal-title {
+			font-size: 30px;
+			font-weight: 450;
+			margin: 20px 0; 
+		}
+
+		.modal-paragraph {
+			font-size: 12px;
+			margin: 0 15px;
+			display: inline-block;
+			a {
+				color: #333333;
+
+				div {
+					display: inline-block;
+					margin: 2px;
+					vertical-align: middle;
+				}
+
+				i {
+					font-size: 25px;
+				}
+
+				p {
+				 	margin: 5px 0;
+				}
+
+				img {
+					width: 25px;
+					heigth: 25px;
+				}
+			}
+
+			a:hover {
+				color: #34b5aa;
+			}
+
+			p {
+				text-align: justify;
+				margin: 10px 20px;
+			}
+		}
+	}
+}
+
+.research .card-content {
+	@include prefix(display, flex, webkit moz ms o);
+	height: 160px;
+	@include prefix(flex-flow, column wrap, webkit moz ms o);
+	@include prefix(justify-content, center, webkit moz ms o);
+}
+
+#tab-students .collapsible {
+
+	.collapsible-header {
+		border-bottom: 0;
+	}
+
+	.collapsible-body {
+		background-color: transparent;
+		border-bottom: 0;
+	}
+}
+
 
 
 	/** INSTRUMENTATION **/
@@ -591,6 +616,12 @@ h5 i {
 	color: #34b5aa;
 }
 
+.collapsible-header img {
+	width: 25px;
+	height: 25px;
+	margin: 0 10px 0 0;
+}
+
 .padding-collapsible {
 	padding: 20px;
 	background-color: white;
@@ -625,7 +656,7 @@ h5 i {
 }
 
 .project-panel {
-	width: 40%;
+	width: 400px;
 	height: 400px;
 	padding: 0;
 	margin: 40px;

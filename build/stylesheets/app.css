@@ -30,7 +30,7 @@ main {
   -ms-flex: 1;
   -o-flex: 1;
   flex: 1;
-  background-color: #eeeeee;
+  background-color: #f5f5f5;
   background: url("../img/background.jpg") left top;
   background-size: 200px; }
 
@@ -176,101 +176,6 @@ main.background-white {
   margin-top: 0;
   margin-bottom: 0; }
 
-/** RESEARCH GROUP **/
-.separator {
-  margin: 50px 40px;
-  text-align: center; }
-
-.section-title {
-  font-size: 50px;
-  padding: 50px 10px 10px 10px; }
-  @media only screen and (max-width: 650px) {
-    .section-title {
-      padding: 10px;
-      font-size: 36px;
-      line-height: 36px; } }
-
-.group-card {
-  width: 256px;
-  display: inline-block;
-  padding: 0;
-  margin: 20px;
-  vertical-align: top;
-  position: relative;
-  overflow: hidden; }
-  @media only screen and (max-width: 650px) {
-    .group-card {
-      display: block;
-      margin-left: auto;
-      margin-right: auto; } }
-  .group-card .card-image {
-    width: 256px;
-    height: 256px; }
-    .group-card .card-image a {
-      color: #333333; }
-      .group-card .card-image a span {
-        font-weight: 500; }
-    .group-card .card-image a:hover {
-      color: #34b5aa; }
-    .group-card .card-image .image-background {
-      width: inherit;
-      height: inherit;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: 50% 50%; }
-  .group-card .card-content {
-    padding: 10px;
-    position: relative; }
-    .group-card .card-content .card-title {
-      line-height: 100%;
-      font-size: 20px;
-      font-weight: 500;
-      margin: 0 15px; }
-    .group-card .card-content .card-paragraph {
-      margin-top: 10px;
-      font-size: 15px; }
-  .group-card .card-reveal {
-    padding: 10px; }
-    .group-card .card-reveal .card-title {
-      line-height: 100%;
-      font-size: 20px;
-      font-weight: 500; }
-      .group-card .card-reveal .card-title .desactivator {
-        display: block;
-        cursor: pointer;
-        text-align: center; }
-        .group-card .card-reveal .card-title .desactivator i {
-          margin-top: 5px; }
-      .group-card .card-reveal .card-title .desactivator-title {
-        margin: 5px 15px 15px 15px; }
-    .group-card .card-reveal .card-paragraph {
-      font-size: 15px;
-      margin: 15px 0; }
-      .group-card .card-reveal .card-paragraph a {
-        color: #333333; }
-        .group-card .card-reveal .card-paragraph a span {
-          font-weight: 500; }
-      .group-card .card-reveal .card-paragraph a:hover {
-        color: #34b5aa; }
-
-.research .card-content {
-  -webkit-display: flex;
-  -moz-display: flex;
-  -ms-display: flex;
-  -o-display: flex;
-  display: flex;
-  height: 160px;
-  -webkit-flex-flow: column wrap;
-  -moz-flex-flow: column wrap;
-  -ms-flex-flow: column wrap;
-  -o-flex-flow: column wrap;
-  flex-flow: column wrap;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  -ms-justify-content: center;
-  -o-justify-content: center;
-  justify-content: center; }
-
 /** TABS **/
 .tab-section {
   background-color: #34b5aa;
@@ -298,14 +203,125 @@ main.background-white {
   background-color: #ecbe14;
   height: 3px; }
 
-#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-professor, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign, #tab-aids, #tab-projects {
+#tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-students, #tab-former, #tab-aids, #tab-projects {
   padding: 50px; }
   @media only screen and (max-width: 996px) {
-    #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-professor, #tab-phd, #tab-master, #tab-undergraduate, #tab-foreign, #tab-aids, #tab-projects {
+    #tab-optical, #tab-separation, #tab-apparatus, #tab-articles, #tab-books, #tab-patents, #tab-PhD, #tab-master, #tab-undergraduate, #tab-international, #tab-national, #tab-students, #tab-former, #tab-aids, #tab-projects {
       padding: 0 0.75rem; } }
 
 .container-tabs .container {
   max-width: 100%; }
+
+/** RESEARCH GROUP **/
+.separator {
+  margin: 40px 30px;
+  text-align: center; }
+
+.section-title {
+  font-size: 50px;
+  padding: 50px 10px 10px 10px; }
+  @media only screen and (max-width: 650px) {
+    .section-title {
+      padding: 10px;
+      font-size: 36px;
+      line-height: 36px; } }
+
+.group-card {
+  width: 345.94595px;
+  display: inline-block;
+  padding: 0;
+  margin: 10px;
+  vertical-align: top;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px; }
+  @media only screen and (max-width: 650px) {
+    .group-card {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; } }
+  .group-card a {
+    color: #000000; }
+  .group-card a:hover {
+    color: #ecbe14; }
+  .group-card .card-image {
+    width: 182.85714px;
+    height: 182.85714px;
+    margin: auto; }
+    .group-card .card-image .image-background {
+      width: inherit;
+      height: inherit;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50% 50%; }
+  .group-card .card-description {
+    width: 97%;
+    margin: 12px auto;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 5px; }
+    .group-card .card-description .card-title {
+      line-height: 100%;
+      font-size: 20px;
+      font-weight: 400;
+      margin: 2px 15px; }
+    .group-card .card-description .card-paragraph p {
+      font-size: 15px;
+      margin: 0; }
+
+.modal {
+  width: 80%; }
+  .modal .card-modal .modal-title {
+    font-size: 30px;
+    font-weight: 450;
+    margin: 20px 0; }
+  .modal .card-modal .modal-paragraph {
+    font-size: 12px;
+    margin: 0 15px;
+    display: inline-block; }
+    .modal .card-modal .modal-paragraph a {
+      color: #333333; }
+      .modal .card-modal .modal-paragraph a div {
+        display: inline-block;
+        margin: 2px;
+        vertical-align: middle; }
+      .modal .card-modal .modal-paragraph a i {
+        font-size: 25px; }
+      .modal .card-modal .modal-paragraph a p {
+        margin: 5px 0; }
+      .modal .card-modal .modal-paragraph a img {
+        width: 25px;
+        heigth: 25px; }
+    .modal .card-modal .modal-paragraph a:hover {
+      color: #34b5aa; }
+    .modal .card-modal .modal-paragraph p {
+      text-align: justify;
+      margin: 10px 20px; }
+
+.research .card-content {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -ms-display: flex;
+  -o-display: flex;
+  display: flex;
+  height: 160px;
+  -webkit-flex-flow: column wrap;
+  -moz-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  -o-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center; }
+
+#tab-students .collapsible .collapsible-header {
+  border-bottom: 0; }
+
+#tab-students .collapsible .collapsible-body {
+  background-color: transparent;
+  border-bottom: 0; }
 
 /** INSTRUMENTATION **/
 .row {
@@ -466,6 +482,11 @@ h5 i {
 .collapsible-header i {
   color: #34b5aa; }
 
+.collapsible-header img {
+  width: 25px;
+  height: 25px;
+  margin: 0 10px 0 0; }
+
 .padding-collapsible {
   padding: 20px;
   background-color: white; }
@@ -498,7 +519,7 @@ h5 i {
       padding: 20px; } }
 
 .project-panel {
-  width: 40%;
+  width: 400px;
   height: 400px;
   padding: 0;
   margin: 40px;

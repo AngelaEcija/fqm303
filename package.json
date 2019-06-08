@@ -1,5 +1,5 @@
 {
-  "name": "FQM_303",
+  "name": "FQM 303",
   "version": "0.0.1",
   "description": "description of FQM_303",
   "main": "gulpfile.js",
@@ -9,8 +9,8 @@
   },
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Angela Ecija",
+    "email": "angie.ecija.4@gmail.com"
   },
   "repository": {
     "type": "git",
@@ -21,8 +21,8 @@
     "browser-sync": "2.26.7",
     "browserify": "16.2.3",
     "browserify-shim": "3.8.14",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^4.2.0",
+    "gulp": "3.9.1",
+    "gulp-clean-css": "4.2.0",
     "gulp-compass": "2.1.0",
     "gulp-minify-css": "1.2.4",
     "gulp-minify-html": "1.0.6",
@@ -30,7 +30,7 @@
     "gulp-sequence": "1.0.0",
     "gulp-streamify": "1.0.2",
     "gulp-uglify": "3.0.2",
-    "gulp-watch": "^5.0.1",
+    "gulp-watch": "5.0.1",
     "vinyl-source-stream": "2.0.0",
     "watchify": "3.11.1"
   },

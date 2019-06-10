@@ -318,10 +318,25 @@ main.background-white {
 
 #tab-students .collapsible .collapsible-header {
   border-bottom: 0; }
+  #tab-students .collapsible .collapsible-header p {
+    margin: 0;
+    line-height: 25px; }
 
 #tab-students .collapsible .collapsible-body {
   background-color: transparent;
+  border-bottom: 0;
+  text-align: center; }
+
+#tab-former .collapsible .collapsible-header {
   border-bottom: 0; }
+  #tab-former .collapsible .collapsible-header p {
+    margin: 0;
+    line-height: 25px; }
+
+#tab-former .collapsible .collapsible-body {
+  background-color: transparent;
+  border-bottom: 0;
+  text-align: center; }
 
 /** INSTRUMENTATION **/
 .row {

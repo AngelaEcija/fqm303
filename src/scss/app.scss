@@ -425,11 +425,35 @@ main.background-white {
 
 	.collapsible-header {
 		border-bottom: 0;
+
+		p {
+			margin: 0;
+			line-height: 25px;
+		}
 	}
 
 	.collapsible-body {
 		background-color: transparent;
 		border-bottom: 0;
+		text-align: center;
+	}
+}
+
+#tab-former .collapsible {
+
+	.collapsible-header {
+		border-bottom: 0;
+
+		p {
+			margin: 0;
+			line-height: 25px;
+		}
+	}
+
+	.collapsible-body {
+		background-color: transparent;
+		border-bottom: 0;
+		text-align: center;
 	}
 }
 

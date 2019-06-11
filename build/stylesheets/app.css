@@ -305,7 +305,7 @@ main.background-white {
     font-weight: 450;
     margin: 20px 0; }
   .modal .card-modal .modal-paragraph {
-    font-size: 12px;
+    font-size: 14px;
     margin: 0 15px;
     display: inline-block; }
     .modal .card-modal .modal-paragraph a {
@@ -320,7 +320,7 @@ main.background-white {
         margin: 5px 0; }
       .modal .card-modal .modal-paragraph a img {
         width: 25px;
-        heigth: 25px; }
+        height: 25px; }
     .modal .card-modal .modal-paragraph a:hover {
       color: #34b5aa; }
     .modal .card-modal .modal-paragraph p {
@@ -703,16 +703,17 @@ h5 i {
 
 #galeria_imagen {
   text-align: center;
-  padding: 15px 10px 0 10px; }
+  padding: 20px 20px 0px 20px; }
+  #galeria_imagen p {
+    margin: 5px 0px; }
 
 #galeria_miniaturas {
   text-align: center;
   margin: 0 auto;
-  padding: 15px 10px 0 10px; }
+  padding: 20px; }
 
 .imgGaleria {
-  height: 500px;
-  /* Ancho de la imagen */
+  width: 70%;
   display: inline-block; }
 
 .contenedor_miniatura {

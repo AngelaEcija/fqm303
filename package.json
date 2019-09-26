@@ -4,7 +4,7 @@
   "description": "description of FQM_303",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "gulp",
+    "dev": "npx gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "homepage": "",

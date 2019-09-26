@@ -1,4 +1,4 @@
-﻿@charset 'UTF-8';
+@charset 'UTF-8';
 
 $wrapper: 1280;
 $wrapperMobile: 996;
@@ -111,6 +111,7 @@ footer blockquote div div {
 
 nav {
   background-color: #34b5aa !important;
+  min-height: 64px;
 
   @include respond(mobile) {
     height: 64px;

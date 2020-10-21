@@ -282,7 +282,7 @@ main.background-white {
   margin: 40px 30px; }
 
 #tab-staff .staff-section, #tab-students .staff-section, #tab-former .staff-section {
-  background-color: #f5f5f5c5;
+  background-color: #f5f5f5d5;
   border-radius: 5px;
   margin: 40px 30px; }
 
@@ -290,12 +290,12 @@ main.background-white {
   text-align: left;
   padding: 10px 20px; }
   #tab-staff .separator-title .staff-header, #tab-students .separator-title .staff-header, #tab-former .separator-title .staff-header {
-    color: #34b5aa;
-    display: inline-block; }
-    #tab-staff .separator-title .staff-header img, #tab-students .separator-title .staff-header img, #tab-former .separator-title .staff-header img {
-      size: 30px; }
+    color: #34b5aa; }
     #tab-staff .separator-title .staff-header h5, #tab-students .separator-title .staff-header h5, #tab-former .separator-title .staff-header h5 {
-      font-weight: 500; }
+      font-weight: 500;
+      display: inline-flex; }
+      #tab-staff .separator-title .staff-header h5 img, #tab-students .separator-title .staff-header h5 img, #tab-former .separator-title .staff-header h5 img {
+        height: 30px; }
 
 #tab-staff .separator-item, #tab-students .separator-item, #tab-former .separator-item {
   margin: 10px 0;
@@ -389,157 +389,14 @@ main.background-white {
   -o-justify-content: center;
   justify-content: center; }
 
-#tab-students .collapsible .collapsible-header {
-  border-bottom: 0; }
-  #tab-students .collapsible .collapsible-header p {
-    margin: 0;
-    line-height: 25px; }
-
-#tab-students .collapsible .collapsible-body {
-  background-color: #f5f5f5a9;
-  text-align: center; }
-
-#tab-former .collapsible .collapsible-header {
-  border-bottom: 0; }
-  #tab-former .collapsible .collapsible-header p {
-    margin: 0;
-    line-height: 25px; }
-
-#tab-former .collapsible .collapsible-body {
-  background-color: #f5f5f5a9;
-  border-bottom: 0;
-  text-align: center; }
-
-/** INSTRUMENTATION **/
-.row {
-  margin-bottom: 0 !important; }
-
-h5 i {
-  margin-right: 15px;
-  color: #34b5aa; }
-
-.date-title {
-  padding: 5px 20px 5px 20px; }
-
-.instrumentation-container.image {
-  position: relative;
-  margin: 0; }
-
-.instrumentation-container.image .instrumentation-image-container {
-  width: 90px;
-  height: 90px;
-  margin-right: 20px;
-  display: inline-block;
-  vertical-align: top;
-  height: 100%; }
-  @media only screen and (max-width: 650px) {
-    .instrumentation-container.image .instrumentation-image-container {
-      width: 60px !important;
-      height: 60px !important; } }
-
-.instrumentation-container.image .instrumentation-text-container {
-  display: inline-block;
-  vertical-align: middle; }
-  @media only screen and (max-width: 650px) {
-    .instrumentation-container.image .instrumentation-text-container {
-      vertical-align: top; } }
-
-.instrumentation-container.image .instrumentation-image-container {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  width: 90px;
-  height: 90px;
-  -webkit-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: white; }
-  @media only screen and (max-width: 650px) {
-    .instrumentation-container.image .instrumentation-image-container {
-      vertical-align: top; } }
-
-.instrumentation-container.image
-.instrumentation-image-container
-.materialboxed {
-  height: 90px; }
-
-.instrumentation-container.image .instrumentation-image-container img {
-  position: absolute;
-  height: 100%;
-  max-height: 100%;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%) !important;
-  -moz-transform: translate(-50%, -50%) !important;
-  -o-transform: translate(-50%, -50%) !important;
-  transform: translate(-50%, -50%) !important; }
-
-.instrumentation-container.image
-.instrumentation-image-container
-.materialboxed {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important; }
-  @media only screen and (max-width: 996px) {
-    .instrumentation-container.image
-.instrumentation-image-container
-.materialboxed.active img {
-      width: 100%;
-      height: auto; } }
-
-.instrumentation-container.image
-.instrumentation-image-container
-.materialboxed:hover {
-  will-change: initial !important; }
-
-.instrumentation-container.image .instrumentation-image-container img.active {
-  border-radius: 0;
-  width: 100%; }
-
-.instrumentation-container.image .instrumentation-text-container {
-  -webkit-width: calc(100% - 140px);
-  -moz-width: calc(100% - 140px);
-  -ms-width: calc(100% - 140px);
-  -o-width: calc(100% - 140px);
-  width: calc(100% - 140px);
-  padding: 20px 0;
-  border-bottom: none; }
-  @media only screen and (max-width: 650px) {
-    .instrumentation-container.image .instrumentation-text-container {
-      padding: 0;
-      -webkit-width: calc(100% - 80px);
-      -moz-width: calc(100% - 80px);
-      -ms-width: calc(100% - 80px);
-      -o-width: calc(100% - 80px);
-      width: calc(100% - 80px); } }
-
-.instrumentation-container .instrumentation-text-container p,
-.instrumentation-container .instrumentation-text-container span {
-  padding: 0;
-  margin: 0; }
-
-/** CARDS INSTRUMENTATION **/
-.ellipsis-short {
-  text-align: justify;
-  height: 88px; }
-
-.card .card-action {
-  text-align: right; }
-
-.card .card-action a {
-  margin-right: 0; }
-
-.modal .max-width {
-  max-width: 100%;
-  width: 100%; }
-
 /** PUBLICATIONS **/
+.publication-card {
+  background-color: #f5f5f5d5;
+  padding: 25px;
+  margin: 10px 0; }
+  .publication-card .date-title {
+    color: #34b5aa; }
+
 .padding-content p {
   padding: 5px 50px; }
 
@@ -570,31 +427,8 @@ h5 i {
   margin: 0; }
 
 /** CONFERENCES **/
-@media only screen and (max-width: 996px) {
-  .collapsible.popout {
-    margin: 50px 0; } }
-
-.collapsible-header i {
-  color: #34b5aa; }
-
-.collapsible-header img {
-  width: 25px;
-  height: 25px;
-  margin: 0 10px 0 0; }
-
-.padding-collapsible {
-  padding: 20px;
-  background-color: white; }
-
-.padding-collapsible-conference {
-  padding: 20px;
-  border-bottom: 1px solid #ccc; }
-  @media only screen and (max-width: 996px) {
-    .padding-collapsible-conference .padding-content p {
-      padding: 5px 0; } }
-
-.padding-collapsible-conference:last-child {
-  border-bottom: none; }
+.date-conference i {
+  margin: 5px; }
 
 /** PROJECTS **/
 .background-projects {

@@ -80,7 +80,7 @@ nav {
       height: 64px;
       line-height: 64px; } }
 
-nav.indicator {
+nav .indicator {
   background-color: #ecbe14;
   height: 3px; }
 
@@ -190,11 +190,10 @@ main.background-white {
 
 /** RESEARCH LINES **/
 .research-lines {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  background-color: #ffffff; }
+  margin: 75px; }
   .research-lines .research-lines-container {
-    padding: 75px 150px; }
+    padding: 75px;
+    background-color: #f5f5f5d5; }
     .research-lines .research-lines-container .research-lines-title {
       color: #ecbe14;
       padding-top: 0;
@@ -332,7 +331,10 @@ main.background-white {
   .group-card .card-description {
     width: 97%;
     margin: 12px auto;
-    position: relative; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .group-card .card-description .card-title {
       line-height: 100%;
       font-size: 20px;
@@ -341,6 +343,21 @@ main.background-white {
     .group-card .card-description .card-paragraph p {
       font-size: 15px;
       margin: 0; }
+    .group-card .card-description .card-paragraph a {
+      color: #333333; }
+      .group-card .card-description .card-paragraph a div {
+        display: inline-block;
+        margin: 2px;
+        vertical-align: middle; }
+      .group-card .card-description .card-paragraph a i {
+        font-size: 25px; }
+      .group-card .card-description .card-paragraph a p {
+        margin: 5px 0; }
+      .group-card .card-description .card-paragraph a img {
+        width: 25px;
+        height: 25px; }
+    .group-card .card-description .card-paragraph a:hover {
+      color: #34b5aa; }
 
 .modal {
   width: 80%; }
@@ -400,35 +417,41 @@ main.background-white {
 .padding-content {
   margin-left: 30px;
   margin-top: 20px; }
-
-.padding-content p {
-  padding: 5px 50px; }
-
-.padding-content span {
-  padding: 0 50px;
-  display: block; }
+  .padding-content p {
+    padding: 5px 50px; }
+  .padding-content span {
+    padding: 0 50px;
+    display: block; }
 
 .publication-container {
   margin: 0 50px; }
   @media only screen and (max-width: 996px) {
     .publication-container {
       margin: 0; } }
-
-.publication-container .publication-text-container {
-  width: 100%;
-  padding: 20px 10px;
-  border-bottom: 1px solid #ccc;
-  display: inline-block;
-  vertical-align: top;
-  height: 100%; }
+  .publication-container .publication-text-container {
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%; }
+  .publication-container p {
+    padding: 0;
+    margin: 0; }
+    .publication-container p a {
+      color: #000000; }
+    .publication-container p a:hover {
+      color: #34b5aa; }
+  .publication-container span {
+    padding: 0;
+    margin: 0; }
+    .publication-container span a {
+      color: #000000; }
+    .publication-container span a:hover {
+      color: #34b5aa; }
 
 .publication-container:last-child .publication-text-container {
   border-bottom: none; }
-
-.publication-container .publication-text-container p,
-.publication-container .publication-text-container span {
-  padding: 0;
-  margin: 0; }
 
 /** CONFERENCES **/
 .date-conference i {
@@ -513,14 +536,13 @@ main.background-white {
 .card-description {
   padding: 5px;
   width: 100%; }
-
-.card-description a {
-  color: black;
-  -webkit-display: flex;
-  -moz-display: flex;
-  -ms-display: flex;
-  -o-display: flex;
-  display: flex; }
+  .card-description a {
+    color: black;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
+    display: flex; }
 
 .tooltip {
   cursor: pointer; }
@@ -529,21 +551,25 @@ main.background-white {
   display: inline-block;
   margin: 0 10px;
   vertical-align: middle; }
-
-.card-icon i {
-  color: #34b5aa; }
+  .card-icon i {
+    color: #34b5aa; }
 
 .card-item {
   display: inline-block;
   vertical-align: middle; }
 
 /** THESIS **/
-#tab-PhD .padding-content {
-  padding: 5px 0; }
+#tab-PhD .card-panel,
+#tab-master .card-panel,
+#tab-undergraduate .card-panel {
+  background-color: #f5f5f5d5; }
+  #tab-PhD .card-panel .date-title,
+  #tab-master .card-panel .date-title,
+  #tab-undergraduate .card-panel .date-title {
+    color: #34b5aa; }
 
-#tab-master .padding-content {
-  padding: 5px 0; }
-
+#tab-PhD .padding-content,
+#tab-master .padding-content,
 #tab-undergraduate .padding-content {
   padding: 5px 0; }
 
@@ -552,21 +578,19 @@ main.background-white {
   @media only screen and (max-width: 996px) {
     .thesis-container {
       margin: 0; } }
-
-.thesis-container .thesis-text-container {
-  width: 100%;
-  padding: 20px 10px;
-  border-bottom: 1px solid #ccc;
-  display: inline-block;
-  vertical-align: top;
-  height: 100%; }
+  .thesis-container .thesis-text-container {
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%; }
+    .thesis-container .thesis-text-container span {
+      padding: 0;
+      margin: 0; }
 
 .thesis-container:last-child .thesis-text-container {
   border-bottom: none; }
-
-.thesis-container .thesis-text-container span {
-  padding: 0;
-  margin: 0; }
 
 /** PHOTO GALLERY **/
 #galeria,

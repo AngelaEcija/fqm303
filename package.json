@@ -18,7 +18,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "2.26.7",
+    "browser-sync": "2.29.3",
     "browserify": "16.2.3",
     "browserify-shim": "3.8.14",
     "gulp": "3.9.1",
